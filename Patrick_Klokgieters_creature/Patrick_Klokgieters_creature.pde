@@ -51,9 +51,9 @@ void draw(float x, float y) {
     translate(140, 100); 
     
     for(int i = 0; i < 10; i++){
-        float x = sin(phase);
-        float radius = map(x, -1, 1, 40, 300);
-        float lineWidth = map(x, -1, 1, 0, 3);
+        float phase= sin(phase);
+        float radius = map(phase, -1, 1, 40, 300);
+        float lineWidth = map(phase, -1, 1, 0, 3);
         float r = map(x, -1, 1, 0, 255);
         float g = map(x, -1, 1, 255, 0);
         float b = map(x, -1, 1, 255, 125);
